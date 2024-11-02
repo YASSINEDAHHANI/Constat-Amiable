@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093923429782",
+    "project_id": "constat-bdf01",
+    "storage_bucket": "constat-bdf01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093923429782:android:a44a887ed93e2f7f5d91b7",
+        "android_client_info": {
+          "package_name": "com.example.constat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMrdNInGa5ukV_p3bwLQQj_31XK6J6a4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

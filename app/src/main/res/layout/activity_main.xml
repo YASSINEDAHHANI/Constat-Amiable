@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="constat amiable d'accident automobile"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="@color/orange"
+            android:paddingLeft="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date de l'accident:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="date"
+            android:hint="dd/mm/yyyy"
+            android:id="@+id/dateacc"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lieu précis :"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/lieuacc"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blessés meme légers:"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"
+            android:paddingEnd="8dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blesoui"
+                android:text="Oui"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blesnon"
+                android:text="Non"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dégats matériels autre qu'aux véhicules A et B :"
+            android:layout_gravity="center_vertical"
+            android:textSize="13.5sp"
+            android:paddingEnd="8dp"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/degatoui"
+                android:text="Oui"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/degatnon"
+                android:text="Non"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Témois(nom et adress) :"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        android:paddingEnd="8dp"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Temois"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingBottom="10dp"
+                android:text="Vehicule 1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicule :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/V1"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Marque,Type :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/marque1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°immatricul(ou moteur) :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/matricule1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venat de :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/venat1"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Allant vers :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/allant1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingBottom="10dp"
+                android:text="Assuré"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/nom1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prenom1"
+                android:hint="Enter text here"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Adresse :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/adress1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sté d'assurance :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/steac1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°attestation :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/attestation1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°police :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/police1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N° de carte verte(pour les étrangers):"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/carteV1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attestation Valable :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/dateAttestation1"
+                android:layout_height="wrap_content"
+                android:hint="Du dd/mm/yyyy au dd/mm/yy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agence,bureau ou courtier :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/agence1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingBottom="10dp"
+                android:text="Conducteur"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Condnom1"
+                android:hint="Enter text here"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Condprenom1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CondAdress1"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permis de conduire n :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Condpermis1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A1 A B C D E F delivre le :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/delivre1"
+                android:hint="categorie - dd/mm/yyyy" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Par la préfecture de :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/prefecture1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permis valable jusqu'au(pour les categories CDE et les taxis) :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/datePermis1"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#4CAF50"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingBottom="10dp"
+                android:text="Vehicule 2"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vehicule :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/V2"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Marque,Type :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/marque2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°immatricul(ou moteur) :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/matricule2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venat de :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/venat2"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Allant vers :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/allant2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingBottom="10dp"
+                android:text="Assuré"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/nom2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/prenom2"
+                android:hint="Enter text here"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Adresse :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/adress2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sté d'assurance :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/steac2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°attestation :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/attestation2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N°police :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/police2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N° de carte verte(pour les étrangers):"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/carteV2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attestation Valable :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/dateAttestation2"
+                android:layout_height="wrap_content"
+                android:hint="Du dd/mm/yyyy au dd/mm/yy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agence,bureau ou courtier :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/agence2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="35dp"
+                android:paddingBottom="10dp"
+                android:text="Conducteur"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Condnom2"
+                android:hint="Enter text here"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prénom :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Condprenom2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CondAdress2"
+                android:hint="Enter text here" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permis de conduire n :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/Condpermis2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A1 A B C D E F delivre le :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/delivre2"
+                android:hint="categorie - dd/mm/yyyy" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Par la préfecture de :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/prefecture2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permis valable jusqu'au(pour les categories CDE et les taxis) :"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/datePermis2"
+                android:layout_height="wrap_content"
+                android:hint="Enter text here" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cree constat"
+        android:id="@+id/CreateCons"
+        android:backgroundTint="@color/black"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List des constats"
+        android:id="@+id/listconstat"
+        android:backgroundTint="@color/black"
+        />
+</LinearLayout>
+</ScrollView>
